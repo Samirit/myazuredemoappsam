@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Name Web App</title>
+</head>
+<body>
+    <h1>Hello Name Web App</h1>
+    <form method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name">
+        <button type="submit">Submit</button>
+    </form>
+    {% if name %}
+    <p>Hello, {{ name }}!</p>
+    {% endif %}
+</body>
+</html>
